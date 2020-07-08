@@ -32,6 +32,5 @@ We present a smoothed representation of Residual with no smoothed version of Res
 Then we check for seasonality, observing its lack.
 <img src="imgs/data6.JPG" width="600" height="400" />
 
-Finally, we present the prediction model in our total data up to
-2020. We observe that the forecast model has an increasing trend.
+Finally, we present the prediction model in our total data up to 2020. We observe that the forecast model has an increasing trend.
 <img src="imgs/data7.JPG" width="600" height="400" />
