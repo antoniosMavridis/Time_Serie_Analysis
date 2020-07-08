@@ -9,28 +9,28 @@ be used to predict the total number of publication in the future.
 We used the Python programming language to extract the data from the XML file. And for the time serie analysis the Gnuplot open-source software tool.
 
 ## Implementation 
-Publications per year with Gnuplot (Bar Chart): 
+Publications per year with Gnuplot (Bar Chart): <br>
 <img src="imgs/allData_bar_chart.JPG" width="600" height="400" />
 
-Publications per year with Gnuplot (Time Serie form - Line Graph): 
+Publications per year with Gnuplot (Time Serie form - Line Graph): <br>
 <img src="imgs/allData_line_graph.JPG" width="600" height="400" />
 
 Οur data extends until 2020. We will apply time series analysis techniques until 2010 and then we will compare the predicted values ​​with the real ones in the range 2010-2020.
 
-Publications per year with Gnuplot until 2010:
+Publications per year with Gnuplot until 2010: <br>
 <img src="imgs/data1.JPG" width="600" height="400" />
 
-We find an approximate function given by the following formula: f(x) = 520000 * (x/85) ** 6.8 
+We find an approximate function given by the following formula: f(x) = 520000 * (x/85) ** 6.8 <br>
 <img src="imgs/data3.JPG" width="600" height="400" />
 
-We calculate the Residuals by subtracting our function from them data. We observe symmetry around zero and that means we have eliminate the voltage quite well.
+We calculate the Residuals by subtracting our function from them data. We observe symmetry around zero and that means we have eliminate the voltage quite well. <br>
 <img src="imgs/data4.JPG" width="600" height="400" />
 
-We present a smoothed representation of Residual with no smoothed version of Residual, with the ultimate goal of checking if it exists systematic trend in Residual.
+We present a smoothed representation of Residual with no smoothed version of Residual, with the ultimate goal of checking if it exists systematic trend in Residual. <br>
 <img src="imgs/data5.JPG" width="600" height="400" />
 
-Then we check for seasonality, observing its lack.
+Then we check for seasonality, observing its lack. <br>
 <img src="imgs/data6.JPG" width="600" height="400" />
 
-Finally, we present the prediction model in our total data up to 2020. We observe that the forecast model has an increasing trend.
+Finally, we present the prediction model in our total data up to 2020. We observe that the forecast model has an increasing trend.<br>
 <img src="imgs/data7.JPG" width="600" height="400" />
