@@ -8,4 +8,6 @@ be used to predict the total number of publication in the future.
 ## Requirements
 We used the Python programming language to extract the data from the XML file. And for the time serie analysis the Gnuplot open-source software tool.
 
-## Guide
+## ok
+Publications per year with Gnuplot (Bar Chart).
+
