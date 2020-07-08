@@ -9,6 +9,11 @@ be used to predict the total number of publication in the future.
 We used the Python programming language to extract the data from the XML file. And for the time serie analysis the Gnuplot open-source software tool.
 
 ## ok
-Publications per year with Gnuplot (Bar Chart).
-<img src="imgs/allData_bar_chart.jpg" width="900" height="400" />
+Publications per year with Gnuplot (Bar Chart): 
+<img src="imgs/allData_bar_chart.JPG" width="600" height="400" />
+
+Publications per year with Gnuplot (Time Serie form - Line Graph): 
+<img src="imgs/allData_line_graph.JPG" width="600" height="400" />
+
+Οur data extends to 2020. We will apply time series analysis techniques to 2010 and then we will compare the predicted values ​​with the real ones in the range 2010-2020.
 
