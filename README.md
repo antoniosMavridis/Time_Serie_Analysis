@@ -10,4 +10,5 @@ We used the Python programming language to extract the data from the XML file. A
 
 ## ok
 Publications per year with Gnuplot (Bar Chart).
+<img src="imgs/allData_bar_chart.jpg" width="900" height="400" />
 
