@@ -1,0 +1,44 @@
+set terminal svg size 400,300 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
+set xlabel "Years"; set ylabel "Number of Phd Thesis"; set title"Publications"
+
+#plot all phd thesis till 2020 with bar chart.
+set boxwidth 0.35
+set style fill solid
+plot "data.txt" with boxes 
+
+#plot all phd thesis till 2020 with line graph. 
+plot "data.txt" u 2 w l 
+
+#plot phd thesis till 2010 with line graph.
+plot "data.txt" u 2 w l 
+
+#Making the x values numeric and subtracting the constant vertical offset. 
+plot "data.txt" u 0:($2-1) w l 
+
+#Approximate function.
+plot "data.txt" u 0:($2-1) w l, 520000 * (x/85) ** 6.8  
+
+#The residual, after subtracting the function from the data.
+plot "data.txt" u 0:($2-1 - 520000 * ($0/85) ** 6.8) w l 
+
+#Weighted spline approximation.
+#Plotting a smoothed version of the residual together with the unsmoothed residual to test whether there is any systematic trend remaining in the residual.
+f(x) = 520000 * ($0/85) ** 6.8 
+plot "data.txt" u 0:($2-f($0)) w l, "" u 0:($2-f($0)):(0.001) s acs w l 
+
+#Seasonality.
+#There is no seasonality.
+f(x) = 520000 * ($0/85) ** 6.8 
+plot "data.txt" u 0:($2-f($0)) w l, 3*sin(2*pi*x/12) w l
+
+
+#The extended data set up to 2020 together with the model (up to 2010).
+f(x) = 520000 * ($0/85) ** 6.8 
+plot "data.txt" u 0:2 w l, f(x)
+
+
+
+
+
+
