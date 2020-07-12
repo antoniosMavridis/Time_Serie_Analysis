@@ -1,4 +1,4 @@
-# Time_Serie_Analysis
+# Time_Series_Forecasting
 
 ## Introduction and Data Set
 The data set which has used comes from DBLP and its name is “dblp-2020-04-01.xml.gz”. DBLP (https://dblp.uni-trier.de/) is a site that maintains bibliographic data publications, mainly in the field of computer science. In addition to the possibility to navigate and see the data of published works through the website, this data is available as an XML (Extensible) compressed file
